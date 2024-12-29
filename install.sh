@@ -52,6 +52,7 @@ done
 
 # Enable and start lightdm
 echo "Enabling LightDM..."
+sudo apt install lightdm-gtk-greeter
 sudo systemctl enable lightdm
 
 # Enable UFW firewall
