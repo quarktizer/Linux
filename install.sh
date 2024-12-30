@@ -19,6 +19,7 @@ packages=(
   "dunst"
   "picom"
   "coreutils"
+  "python3"
 )
 
 # Function to install packages and check for errors
