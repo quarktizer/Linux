@@ -18,6 +18,7 @@ packages=(
   "rofi"
   "dunst"
   "picom"
+  "coreutils"
 )
 
 # Function to install packages and check for errors
@@ -88,4 +89,4 @@ if [[ "$user_choice" == "y" || "$user_choice" == "Y" ]]; then
   sudo reboot
 else
   echo "You can reboot later when you're ready."
-fi"
+fi
