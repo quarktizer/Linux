@@ -20,6 +20,9 @@ packages=(
   "picom"
   "coreutils"
   "python3"
+  "tmux"
+  "htop"
+  "neofetch"
 )
 
 # Function to install packages and check for errors
