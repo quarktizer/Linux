@@ -78,14 +78,6 @@ sudo systemctl enable tlp
 sudo systemctl start tlp
 
 
-# Enable UFW firewall
-echo "Enabling UFW firewall..."
-sudo ufw enable
-sudo ufw default deny incoming
-sudo ufw default allow outgoing
-sudo ufw allow ssh
-sudo ufw allow http
-sudo ufw allow https
 
 #Create first Timeshift backup
 echo "Creating Timeshift backup..."
@@ -101,14 +93,6 @@ echo "3. Launch picom for compositing (you can add 'picom & ' to i3 config)."
 echo "4. Optionally, set up Timeshift for automatic backups."
 
 echo "All packages installed successfully!"
-# Ask the user if they want to reboot
-echo "Setup is complete. Do you want to reboot now? (y/n)"
-read -p "Enter your choice: " user_choice
 
-# Handle the user's input
-if [[ "$user_choice" == "y" || "$user_choice" == "Y" ]]; then
-  echo "Rebooting the system now..."
-  sudo reboot
-else
-  echo "You can reboot later when you're ready."
-fi
+
+
