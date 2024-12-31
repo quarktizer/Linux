@@ -2,32 +2,42 @@
 
 # List of packages to install
 packages=(
-  "i3"
-  "lightdm"
-  "git"
-  "vim"
-  "curl"
-  "kitty"
-  "polybar"
-  "ufw"
-  "timeshift"
-  "ranger"
-  "clang"
-  "g++"
-  "gcc"
-  "rofi"
-  "dunst"
-  "picom"
-  "coreutils"
-  "python3"
-  "tmux"
-  "htop"
-  "neofetch"
-  "tlp"
-  "pulseaudio"
-  "xinit"
-  "xbacklight"
+  # System Utilities
+  "coreutils"      # Essential system utilities
+  "htop"           # System monitoring
+  "neofetch"       # System information tool
+  "ufw"            # Firewall
+  "tlp"            # Power management
+  "timeshift"      # Backup tool
+  "xinit"          # X11 initialization
+  "xbacklight"     # Screen brightness control
+  "pulseaudio"     # Audio Server
+  "kitty"          # Terminal emulator
+  "ranger"         # File manager (CLI-based)
+  "cpufrequtils"   # Power management
+
+  # Development Tools
+  "git"            # Version control
+  "gcc"            # C compiler
+  "g++"            # C++ compiler
+  "clang"          # Clang compiler
+  "python3"        # Python 3 interpreter
+  "tmux"           # Terminal multiplexer
+  "vim"            # Text editor
+
+  # Window Management / Desktop Environment
+  "i3"             # Tiling window manager
+  "lightdm"        # Display manager
+  "rofi"           # Application launcher
+  "polybar"        # Status bar for i3
+  "picom"          # Compositor for X11
+  "dunst"          # Notification daemon
+
+
+
+
 )
+
 
 # Function to install packages and check for errors
 install_package() {
