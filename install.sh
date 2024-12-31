@@ -23,6 +23,10 @@ packages=(
   "tmux"
   "htop"
   "neofetch"
+  "tlp"
+  "pulseaudio"
+  "xinit"
+  "xbacklight"
 )
 
 # Function to install packages and check for errors
@@ -59,6 +63,10 @@ done
 echo "Enabling LightDM..."
 sudo apt install lightdm-gtk-greeter
 sudo systemctl enable lightdm
+# Enable and start tlp
+sudo systemctl enable tlp
+sudo systemctl start tlp
+
 
 # Enable UFW firewall
 echo "Enabling UFW firewall..."
