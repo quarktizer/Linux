@@ -15,6 +15,7 @@ packages=(
   "kitty"          # Terminal emulator
   "ranger"         # File manager (CLI-based)
   "cpufrequtils"   # Power management
+  "tlp-rdw"        # Power management
 
   # Development Tools
   "git"            # Version control
