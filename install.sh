@@ -82,7 +82,7 @@ sudo systemctl start tlp
 
 #Create first Timeshift backup
 echo "Creating Timeshift backup..."
-sudo timeshift --create --comment "Post-Install backup" --tags D
+sudo timeshift --create --comment "Install.sh Backup" --tags D
 
 
 
